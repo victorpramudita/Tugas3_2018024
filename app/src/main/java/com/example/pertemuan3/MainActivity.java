@@ -1,11 +1,14 @@
 package com.example.pertemuan3;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.Navigation;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView gambarangkot;
@@ -14,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_drawer);
         gambarangkot=(ImageView)findViewById(R.id.idangkot);
         gambarangkot.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
